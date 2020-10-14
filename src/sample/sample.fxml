@@ -1,0 +1,39 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.image.ImageView?>
+<Group fx:controller="sample.Controller"
+       xmlns:fx="http://javafx.com/fxml" fx:id="mainGroup">
+
+    <Arc fx:id="arc" style="-fx-fill: #F7EE00"/>
+
+    <GridPane alignment="center" hgap="10" vgap="10" layoutX="10" layoutY="10">
+
+        <Label text="centerX" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+        <TextField fx:id="centerXField" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+
+        <Label text="centerY" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+        <TextField fx:id="centerYField" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+
+        <Label text="radiusX" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+        <TextField fx:id="radiusXField" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+
+        <Label text="radiusY" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+        <TextField fx:id="radiusYField" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+
+        <Label text="startAngle" GridPane.rowIndex="4" GridPane.columnIndex="0" />
+        <TextField fx:id="startAngleField" GridPane.rowIndex="4" GridPane.columnIndex="1" />
+
+        <Label text="arcLength" GridPane.rowIndex="5" GridPane.columnIndex="0" />
+        <TextField fx:id="arcLengthField" GridPane.rowIndex="5" GridPane.columnIndex="1" />
+
+        <ComboBox fx:id="arcType" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+
+        <Button onAction="#calculateArc" text="calculate"
+                GridPane.rowIndex="7" GridPane.columnIndex="0" />
+    </GridPane>
+
+    <Button fx:id="turnLight" text="Off" layoutX="100" layoutY="450" />
+</Group>
